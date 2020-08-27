@@ -1,0 +1,90 @@
+:root{
+    --backgroundPrimary: #1E2446;
+    --primaryColor: #5E98E0;
+    --secondaryColor: #ED5E00;
+    --tertiary: #35D040;
+}
+
+
+
+#navbarColor{
+    background-color: var(--backgroundPrimary);
+}
+
+.topLogo{
+    padding-right: 20px;
+    border-right: 1px solid var(--tertiary);
+    margin-right: 10px;
+}
+
+h2{
+    font-family: 'Montserrat', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--secondaryColor);
+}
+
+.welcome{
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+}
+
+.welcome p{
+    position: relative;
+    color: var(--secondaryColor);
+    text-align: left;
+    margin-left: 80px;
+    width: 60%;
+    align-content: center;
+    padding-top: 10%;
+    z-index: 3;
+    font-family: 'Montserrat', Times, serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+ .welcome span{
+    text-decoration: underline;
+ }
+
+.welcome img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.3;
+    overflow: hidden;
+}
+
+.projects{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.project-items{
+    margin: 10px;
+    flex: 1 1;
+    min-width: 300px;
+}
+
+#project1{
+    background-color: #35D040;
+}
+
+#project2{
+    background-color: red;
+}
+
+#project3{
+    background-color: blue;
+}
+
+.projects img{
+    width: 100%;
+    min-width: 300px;;
+}
