@@ -1,11 +1,31 @@
+
+/*****************/
+/* General Style */
+/*****************/
+
 :root{
     --backgroundPrimary: #1E2446;
-    --primaryColor: #5E98E0;
+    --primaryColor: #f3e2fa;
     --secondaryColor: #ED5E00;
-    --tertiary: #35D040;
+    --tertiary: #a8f0ad;
 }
 
+h2{
+    font-family:  'Montserrat', Times, serif;
+    color: var(--secondaryColor);
+}
 
+.button{
+    background-color: var(--backgroundPrimary);
+    color: white;
+    border-radius: 8px;
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+/*****************/
+/* Nav bar */
+/*****************/
 
 #navbarColor{
     background-color: var(--backgroundPrimary);
@@ -17,13 +37,10 @@
     margin-right: 10px;
 }
 
-h2{
-    font-family: 'Montserrat', Times, serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: var(--secondaryColor);
-}
 
+/*****************/
+/* Welcome Section */
+/*****************/
 .welcome{
     margin-top: 30px;
     position: relative;
@@ -59,32 +76,84 @@ h2{
     overflow: hidden;
 }
 
-.projects{
+/*****************/
+/* Project Section */
+/*****************/
+
+#projects{
     margin-top: 20px;
+    padding-top: 50px;
+    background-color:#edecec;
+    text-align: center;
+    height: auto;
+}
+
+.projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    padding-bottom: 30px;
 }
+
 .project-items{
-    margin: 10px;
+    background-color: white;
+    margin: 20px;
+    padding-top: 15px;
     flex: 1 1;
     min-width: 300px;
+    border-radius: 10px;
+}
+
+#projects h2{
+    font-weight: bold;
+    font-size: 60px;
 }
 
 #project1{
-    background-color: #35D040;
+    
 }
 
 #project2{
-    background-color: red;
+    
 }
 
 #project3{
-    background-color: blue;
+    
 }
 
 .projects img{
     width: 100%;
-    min-width: 300px;;
+    padding: 10px;
+    padding-bottom: 15px;
+    min-width: 300px;
+}
+
+
+
+/*****************/
+/* Skill Section */
+/*****************/
+
+.skills{
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.skills h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logos img{
+    width: 150px;
+    padding: 15px;
 }
