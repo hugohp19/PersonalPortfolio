@@ -206,11 +206,6 @@ footer p{
 
 @media only screen and (max-width: 740px){
 
-    .button{
-        font-size: 15px;
-
-    }
-
     .welcome{
         margin-top: 30px;
         padding-top: 0;
@@ -229,5 +224,16 @@ footer p{
 
     .contactlogos{
         margin: 0;
+    }
+
+
+    .button{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-items h3{
+        margin-top: 10px;
     }
 }
