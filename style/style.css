@@ -96,6 +96,7 @@ nav{
 #projects{
     margin-top: 20px;
     padding-top: 50px;
+    padding-bottom: 30px;
     background-color:#edecec;
     text-align: center;
     height: auto;
@@ -204,6 +205,11 @@ footer p{
 
 
 @media only screen and (max-width: 740px){
+
+    .button{
+        font-size: 15px;
+
+    }
 
     .welcome{
         margin-top: 30px;
