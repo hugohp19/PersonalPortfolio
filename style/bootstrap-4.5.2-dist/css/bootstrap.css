@@ -6549,11 +6549,11 @@ a.close.disabled {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("/resources/Arrow-Undo-Circle.svg");
+  background-image: url("../../../resources/Arrow-Undo-Circle.svg");
 }
 
 .carousel-control-next-icon {
-  background-image: url("/resources/Arrow-Redo-Circle.svg");
+  background-image: url("../../../resources/Arrow-Redo-Circle.svg");
 }
 
 .carousel-indicators {
