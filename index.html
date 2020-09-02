@@ -7,7 +7,7 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/bootstrap-4.5.2-dist/css/bootstrap.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark" id="navbarColor">
@@ -53,7 +53,30 @@
         <div class="project-items" id="project1">
           <div class="screenshot">
             <a href="https://hugohp19.github.io/PlanningTheEvening/" target="_blank"><img src="resources/Project1.png"></a>
-            <button class="button">&lt;Code&gt;</button>
+            <button onclick="window.open('https://github.com/hugohp19/PlanningTheEvening','_blank')" type="button" class="button">&lt;Code&gt;</button>
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+                Description
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Planning the evening was created for the purpose of facilitating the user with more information in order to help them make the decision between going out or staying home and watch a movie. If the they want to “Go Out”, they only need to input the zip code or name of a city and the application will display the weather and twelve restaurants that are nearby. The weather is getting bad or they’re not interest in any of those restaurants at the moment, then, they can choose to stay home and search for any name and the application will display all the movies that contains that searched name for them to choose.
+              </div>
+            </div>
+
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
+                Technologies
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample4">
+              <div class="card card-body">
+                <strong>Languages:</strong> HTML, CSS and JavaScript.<br>
+                <strong>APIs:</strong> Weather API, TripAdvisor (Restaurants), and IMDb (Movies).<br>
+                <strong>Tools:</strong> Visual Studio Code.
+              </div>
+            </div>
           </div>
           <h3>Evening Planner</h3>
         </div>
@@ -61,15 +84,110 @@
         <div class="project-items" id="project2">
           <div class="screenshot">
             <a href="http://projectpipelinewmh.s3-website-us-east-1.amazonaws.com/view" target="_blank"><img src="resources/Project2.png"></a>
-            <button class="button">&lt;Code&gt;</button>
+            <button onclick="window.open('https://github.com/hugohp19/TasKManager','_blank')" type="button" class="button">&lt;Code&gt;</button>
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                Description
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Everybody is busy in today's world, so tracking your everyday tasks is a crucial tool in productivity. With the Task Board, we have made it easy for users to manage their tasks. Users can see all tasks and find specific tasks with ease with a filter/search feature. The User can also create new tasks, along with updating and deleting current tasks. Users can access this application via an interactive single paged application hosted and deployed using a CI/CD pipeline to an AWS S3 bucket that interacts with a RESTful API hosted on an AWS EC2.
+              </div>
+            </div>
+
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
+                Technologies
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample5">
+              <div class="card card-body">
+                <strong>Languages:</strong>
+                Front-End: HTML, CSS, Bootstrap, TypeScript, Angular (Single Page Application).<br>
+                <strong>APIs:</strong> RESTful API hosted on an AWS EC2.<br>
+                <strong>Tools:</strong> Visual Studio Code.
+
+              </div>
+            </div>
           </div>
           <h3>Task Manager</h3>
         </div>
 
         <div class="project-items" id="project3">
           <div class="screenshot">
-            <img src="resources/Project1.png">
-            <button class="button">&lt;Code&gt;</button>
+            <!--                            -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="resources/Project3a.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="whiteLetters">Java</h5>
+                    <p class="whiteLetters">•	Used the Front Controller Design Pattern and J2EE architecture to deploy a Java application.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/Project3b.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="whiteLetters">DB & DBeaver</h5>
+                    <p class="whiteLetters">Utilized Java Database Connectivity (JDBC) to persist data using an administration RDS tool such as DBeaver.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/Project3c.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="darkLetters">Postman</h5>
+                    <p class="darkLetters">Tested endpoints using Postman.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/Project3g.png" class="d-block w-100 controlSize" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="darkLetters">AWS</h5>
+                    <p class="darkLetters">Setup and Utilized Amazon Web Servers (AWS) Relational Database System (RDS).</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="color: black;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!--                            -->
+            <!-- <img src="resources/Project1.png"> -->
+            <button onclick="window.open('https://github.com/200526-rocp-omega/BakingAPI','_blank')" type="button" class="button">&lt;Code&gt;</button>
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+                Description
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                The Banking API will manage the bank accounts of its users. It will be managed by the Bank's employees and admins. Employees and Admins count as Standard users with additional abilities. All users must be able to update their personal information, such as username, password, first and last names, as well as email. Accounts owned by users must support withdrawal, deposit, and transfer. Transfer of funds should be allowed between accounts owned by the same user, as well as between accounts owned by different users. Standard users should be able to register and login to see their account information. They can have either Checking or Savings accounts. Employees can view all customer information, but not modify in any way. Admins can both view all user information, as well as directly modify it.
+              </div>
+            </div>
+
+            <p>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
+                Technologies
+              </button>
+            </p>
+            <div class="collapse multi-collapse" id="multiCollapseExample6">
+              <div class="card card-body">
+                <strong>Languages:</strong> Java, JDBC, Servlet, MySQL.<br>
+                <strong>APIs:</strong> Created API and EndPoints.<br>
+                <strong>Tools:</strong> Spring Tool Suite 4, Postman, DBeaver.
+              </div>
+            </div>
           </div>
           <h3>Banking API</h3>
         </div>

@@ -24,6 +24,11 @@ h2{
     margin-bottom: 30px;
 }
 
+.button:hover{
+    background-color: var(--secondaryColor);
+
+}
+
 /*****************/
 /* Nav bar */
 /*****************/
@@ -77,6 +82,12 @@ nav{
 .contactlogos img{
     position: relative;
     width: 30px;
+    border-radius: 100%;
+ }
+
+ .contactlogos img:hover{
+    width: 50px;
+    border-radius: 10px;
  }
 
 .backgroundWelcome{
@@ -145,6 +156,16 @@ nav{
 }
 
 
+/* carousel */
+
+.whiteLetters{
+    color: white;
+}
+.darkLetters{
+    color: black;
+ }
+
+
 
 /*****************/
 /* Skill Section */
@@ -171,7 +192,12 @@ nav{
 }
 
 .logos img{
-    width: 150px;
+    width: 140px;
+    padding: 15px;
+}
+
+.logos img:hover{
+    width: 160px;
     padding: 15px;
 }
 
@@ -232,8 +258,7 @@ footer p{
 
     .button{
         font-size: 15px;
-        padding: 0;
-        margin: 0;
+        margin-bottom: 10px;
     }
 
     .project-items h3{
