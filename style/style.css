@@ -57,7 +57,7 @@ nav{
     height: 800px;
 }
 
-.welcome p{
+.welcome h2{
     position: relative;
     color: var(--secondaryColor);
     text-align: left;
