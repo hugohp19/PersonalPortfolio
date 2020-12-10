@@ -2,9 +2,13 @@
 /*****************/
 /* General Style */
 /*****************/
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root{
-    --backgroundPrimary: #1E2446;
+    --backgroundPrimary: #104DA1;
     --primaryColor: #f3e2fa;
     --secondaryColor: #ED5E00;
     --tertiary: #a8f0ad;
@@ -32,12 +36,14 @@ h2{
 /*****************/
 /* Nav bar */
 /*****************/
-nav{
-    display: block;
-}
-
 #navbarColor{
     background-color: var(--backgroundPrimary);
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+
 }
 
 .topLogo{
@@ -51,10 +57,10 @@ nav{
 /* Welcome Section */
 /*****************/
 .welcome{
-    margin-top: 30px;
+    padding-top: 30px;
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height: 100vh;
 }
 
 .welcome h2{
@@ -117,33 +123,29 @@ nav{
 .projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 30px;
 }
 
 .project-items{
     background-color: white;
     margin: 20px;
-    padding-top: 15px;
-    flex: 1 1;
+    padding: 15px;
+    flex: 33% 33% 33%;
+    max-width: 500px;
     min-width: 300px;
     border-radius: 10px;
 }
+
 
 #projects h2{
     font-weight: bold;
     font-size: 50px;
 }
 
-#project1{
-    
-}
 
-#project2{
-    
-}
-
-#project3{
-    
+#projectLocalHero img:hover, #projectAlbumology img:hover{
+  background-color: var(--secondaryColor);
 }
 
 .projects img{
@@ -152,7 +154,7 @@ nav{
     padding: 10px;
     min-width: 300px;
     border-radius: 10px;;
-    background-color: gray;
+    background-color: var(--backgroundPrimary);
 }
 
 
