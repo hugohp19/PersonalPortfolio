@@ -7,15 +7,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-image: url('/resources/welcomebackground1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Source Code Pro', monospace;
+}
+
 :root{
-    --backgroundPrimary: #104DA1;
+    --backgroundPrimary: #001D36;
+    /* --backgroundPrimary: #001D36; */
     --primaryColor: #f3e2fa;
     --secondaryColor: #ED5E00;
-    --tertiary: #a8f0ad;
+    --tertiary:#0C6AED;
+    /* --tertiary: #a8f0ad; */
 }
 
 h2{
-    font-family:  'Montserrat', Times, serif;
+    /* font-family:  'Montserrat', Times, serif; */
+    
     color: var(--secondaryColor);
 }
 
@@ -30,20 +43,19 @@ h2{
 
 .button:hover{
     background-color: var(--secondaryColor);
-
 }
 
 /*****************/
 /* Nav bar */
 /*****************/
 #navbarColor{
-    background-color: var(--backgroundPrimary);
+    /* background-color: var(--backgroundPrimary); */
     position: fixed;
     margin: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 18;
     top: 0;
-
+    background-color:transparent;
 }
 
 .topLogo{
@@ -58,53 +70,71 @@ h2{
 /*****************/
 .welcome{
     padding-top: 30px;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100vh;
+    /* background-image: url('/resources/welcomebackground1.jpg'); */
+    background-size: cover;
+    background: rgba(252, 252, 252, 0.1);
+}
+
+.welcomeIntro{
+  flex-basis: 70%;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.welcomeImageContainer{
+  flex-basis: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.welcomeAvatar{
+  width: 70%;
+  max-width: 400px;
+  min-width: 130px;
 }
 
 .welcome h2{
-    position: relative;
-    color: var(--secondaryColor);
-    text-align: left;
-    margin-left: 80px;
-    width: 60%;
-    align-content: center;
-    padding-top: 10%;
-    z-index: 2;
-    font-family: 'Montserrat', Times, serif;
-    font-size: 45px;
-    font-weight: bold;
+  color: var(--secondaryColor);
+  text-align: left;
+  margin-left: 80px;
+  width: 90%;
+  font-size: 40px;
+  font-weight: bold;
 }
- .welcome span{
-    text-decoration: underline;
- }
 
- .contactlogos{
-    position: relative;
-     z-index: 3;
-     margin-left: 80px;
- }
+.welcome span{
+  text-decoration: underline;
+}
+
+.contactlogos{
+  position: relative;
+  z-index: 3;
+  padding-top: 20px;
+  margin-left: 80px;
+}
+
 .contactlogos img{
-    position: relative;
-    width: 30px;
-    border-radius: 100%;
- }
+  position: relative;
+  width: 4%;
+  border-radius: 50%;
+  opacity: 0.6;
+  margin-right: 15px;
+}
 
- .contactlogos img:hover{
-    width: 50px;
-    border-radius: 10px;
- }
 
-.backgroundWelcome{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    opacity: 0.3;
-    overflow: hidden;
+.contactlogos img:hover{
+  /* width: 50px; */
+  opacity: 1;
 }
 
 /*****************/
@@ -112,12 +142,21 @@ h2{
 /*****************/
 
 #projects{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-top: 50px;
     padding-bottom: 30px;
-    background-color:#edecec;
+    /* background-color:#edecec; */
     text-align: center;
     height: auto;
+    background: rgba(252, 252, 252, 0.1);
+}
+
+#projects>a{
+  color: white;
+}
+
+#projects>a:hover{
+  color: var(--secondaryColor);
 }
 
 .projects{
@@ -132,9 +171,10 @@ h2{
     margin: 20px;
     padding: 15px;
     flex: 33% 33% 33%;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 300px;
     border-radius: 10px;
+    box-shadow: 14px 14px 11px -5px rgba(0,0,0,0.75);
 }
 
 
@@ -142,7 +182,6 @@ h2{
     font-weight: bold;
     font-size: 50px;
 }
-
 
 #projectLocalHero img:hover, #projectAlbumology img:hover{
   background-color: var(--secondaryColor);
@@ -174,10 +213,9 @@ h2{
 /*****************/
 
 .skills{
-    margin-top: 50px;
-    padding-top: 50px;
+    padding: 50px 0;
     text-align: center;
-    padding-bottom: 50px;
+    background-color: white;
 }
 
 .skills h2{
@@ -186,34 +224,41 @@ h2{
 }
 
 .logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+  /* background-color: red;
+  border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 
 .logos img{
-    width: 140px;
-    padding: 15px;
+    width: 120px;
+    margin: 15px;
 }
 
 .logos img:hover{
-    width: 160px;
-    padding: 15px;
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-10deg);
+  transition: 0.4s ease;
 }
+
 
 /*****************/
 /* Footer */
 /*****************/
 
-footer{
-    background-color: var(--backgroundPrimary);
-    height: 150px;
-    margin: 100px 0 10px 0;
-    color: white;
-    padding-top: 30px;
+footer.footerBox{
+    background: rgba(0, 29, 54, 0.3) ;
+    height: 110px;
+    /* margin: 100px 0 0 0; */
     text-align: center;
+}
+
+footer.footerBox:hover{
+  background: rgba(0, 29, 54, 1) 
 }
 
 footer img{
@@ -221,24 +266,22 @@ footer img{
     margin: 10px;
 }
 
-footer h3{
+footer.footerBox h3{
     font-size: 20px;
     color: var(--secondaryColor);
 }
 
 footer p{
-    font-size: 10px;
+  color: white;
+  font-size: 10px;
 }
-
-
-
 
 
 
 @media only screen and (max-width: 740px){
 
     .welcome{
-        margin-top: 30px;
+        /* margin-top: 30px; */
         padding-top: 0;
         height: 400px;
         margin-bottom: 50px;
