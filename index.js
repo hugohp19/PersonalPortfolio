@@ -9,9 +9,11 @@
 //     }
 //   });
 // });
+let firstWindowHeight = document.getElementById('about').clientHeight;
+console.log(firstWindowHeight)
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 800) {
-  $('.navbar').css('background','#001D36');
+  if ($(window).scrollTop() >= firstWindowHeight) {
+  $('.navbar').css('background','rgba(0, 29, 54, 0.3)');
   } else {
   $('.navbar').css('background','transparent');
   }
