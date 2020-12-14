@@ -33,7 +33,7 @@ h2{
 }
 
 .button{
-    background-color: var(--backgroundPrimary);
+    background-color: var(--secondaryColor );
     color: white;
     border: 0;
     border-radius: 8px;
@@ -42,7 +42,7 @@ h2{
 }
 
 .button:hover{
-    background-color: var(--secondaryColor);
+    background-color: var(--backgroundPrimary);
 }
 
 /*****************/
@@ -56,14 +56,63 @@ h2{
     z-index: 18;
     top: 0;
     background-color:transparent;
+    height: 50px;
 }
 
 .topLogo{
-    padding-right: 20px;
-    border-right: 1px solid var(--tertiary);
-    margin-right: 10px;
+  margin-right: 10px;
+  width: 130px;
 }
 
+.logoImg{
+width: 150px;
+}
+
+
+#navBarLinks{
+  color: white;
+  background:
+  linear-gradient(
+    to bottom, var(--secondaryColor) 0%,
+    var(--secondaryColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .2s;
+
+}
+
+#navBarLinks:hover{
+  background-size: 4px 50px;
+}
+
+#collapsibleNavbar{
+  border-left: 1px solid var(--tertiary);
+  padding-left: 10px;
+}
+
+.navbar-dark span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#toggleWaffle{
+  background-color: var(--secondaryColor);
+}
+
+#toggleWaffle:hover{
+  background-color: var(--backgroundPrimary);
+}
+
+.navbar a.navbar-brand:hover {
+  color: green;
+}
+
+.navbar-collapse .collapse{
+  background-color: var(--backgroundPrimary);
+}
 
 /*****************/
 /* Welcome Section */
@@ -99,8 +148,39 @@ h2{
 
 .welcomeAvatar{
   width: 70%;
+  min-width: 180px;
   max-width: 400px;
-  min-width: 130px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.welcomeAvatar:hover{
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 
 .welcome h2{
@@ -126,6 +206,7 @@ h2{
 .contactlogos img{
   position: relative;
   width: 4%;
+  min-width: 40px;
   border-radius: 50%;
   opacity: 0.6;
   margin-right: 15px;
@@ -191,7 +272,7 @@ h2{
     width: 100%;
     margin-bottom: 20px;
     padding: 10px;
-    min-width: 300px;
+    min-width: 250px;
     border-radius: 10px;;
     background-color: var(--backgroundPrimary);
 }
@@ -278,35 +359,142 @@ footer p{
 
 
 
-@media only screen and (max-width: 740px){
+@media only screen and (min-width: 601px) and (max-width: 760px){
 
-    .welcome{
-        /* margin-top: 30px; */
-        padding-top: 0;
-        height: 400px;
-        margin-bottom: 50px;
-        text-align: center;
+  .welcome{
+      height: 100vh;
+      text-align: center;
+  }
+
+  .welcome h2{
+      margin: 30px 0 0 0;
+      padding: 0 0 30px 10px;
+      text-align: center;
+      font-size: 28px;
+      width: 100%;
+  }
+
+  .contactlogos{
+      margin: 0;
+  }
+
+  .button{
+      font-size: 15px;
+      margin-bottom: 10px;
+  }
+
+  .project-items h3{
+      margin-top: 10px;
+  }
+  .navbar-collapse {
+  background: var(--backgroundPrimary);
+  }
+
+  .navbar-nav{
+  width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .navbar-nav{
+    width: 50%;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .welcomeIntro{
+    padding: 0;
+    margin: 0;
+  }
+
+  .welcomeIntro h2{
+    padding: 0;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .welcomeImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis: 55%;
+    width: 50%;
+  }
+
+  .welcomeAvatar{
+    width: 200px;
+  }
+
+  .contactlogos{
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .contactlogos img{
+    width: 20px;
+  }
+
+  .navbar-collapse {
+    background: var(--backgroundPrimary);
     }
-
-    .welcome h2{
-        margin: 30px 0 0 0;
-        padding: 0 0 30px 10px;
-        text-align: center;
-        font-size: 28px;
-        width: 100%;
-    }
-
-    .contactlogos{
-        margin: 0;
-    }
-
-
-    .button{
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .project-items h3{
-        margin-top: 10px;
+  
+    .navbar-nav{
+    width: 50%;
     }
 }
+
+/* 
+
+@media only screen and (max-width: 600px){
+  .navbar-nav{
+    width: 50%;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .welcomeIntro{
+    padding: 0;
+    margin: 0;
+  }
+
+  .welcomeIntro h2{
+    padding: 0;
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  .welcomeImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis: 55%;
+    width: 50%;
+  }
+
+  .welcomeAvatar{
+    width: 200px;
+  }
+
+  .contactlogos{
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .contactlogos img{
+    width: 30px;
+  }
+} */
